@@ -1,0 +1,85 @@
+
+@import "./assets/styles/variables.scss";
+
+@font-face {
+  font-family: "DMSans";
+  src: url(assets/fonts/DMSans-Bold.woff);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(assets/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins regular";
+  src: url(assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins mid";
+  src: url(assets/fonts/poppins-v5-latin-500.ttf);
+}
+@font-face {
+  font-family: "Poppins bold";
+  src: url(assets/fonts/poppins-v5-latin-800.ttf);
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  // color: $primary-blue-hover;
+  @include mediaM(750px){
+      font-size: 0.9rem;
+  }
+}
+h1,
+h2,
+h4,
+h6,
+.special-font{
+  font-family: "Poppins bold";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+h2{
+  @include mediaW(951px){
+      font-size: 2.7rem;
+  }
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h6 {
+  font-family: "Avenir bold";
+  font-weight: 900;
+}
+
+h3, h5 {
+  font-family: "Poppins mid";
+}
+.selected-nav {
+  color: $primary-blue;
+  opacity: 1;
+  font-weight: 900;
+  font-family: "Avenir black";
+  span {
+    color: $primary-blue;
+    opacity: 1;
+    font-family: "Avenir black";
+    font-weight: 900;
+  }
+  button{
+    color: $black;
+  }
+}
