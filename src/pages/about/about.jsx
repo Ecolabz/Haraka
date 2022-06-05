@@ -28,7 +28,7 @@ function AboutPage() {
               <h2 className="increase-xl mb-5">
                 We are here to make your life easy
               </h2>
-              <p>
+              <p className="increased-soft c-faint">
                 Haraka makes your life easier as you can order groceries , food and services from the shops and small 
                 businesses you are already familiar with and get it delivered to you on the same day (even within 1 hour) to 
                 save your precious time and money with just a few clicks!

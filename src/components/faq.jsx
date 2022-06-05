@@ -36,7 +36,7 @@ function Faq() {
                 }
               </div>
               <div className={"answer" + (item.active ? ' full' : '')}>
-                <p className="reduced-soft mb-0">{item.answer}</p>
+                <p className="reduced-soft mb-0">{item.answer.map((item, index) => < >- {item}<br /></>)}</p>
               </div>
             </div>
           })}

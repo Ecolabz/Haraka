@@ -15,6 +15,7 @@ function Hero() {
 
   return (
     <div className="hero" id="home">
+      <div className="header-space"></div>
       <div className="hero-spread">
         <div className="text-sect">
          <div className="text-holder">

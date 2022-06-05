@@ -88,16 +88,17 @@ function Info() {
                 Stay on-demand with increased sales and reduced dependency on inventory when you 
               </p>
               <h4 className="increased c-faint">
-                Join our web of stores
+                Ride and earn with us
               </h4>
               <p className="c-faint-font mb-4">
-                Stay on-demand with increased sales and reduced dependency on inventory when you 
+                Own a vehicle? Perfect! Join our team of delivery riders shopping and delivering orders on their 
+                schedule while earning to their satisfaction.
               </p>
               <h4 className="increased c-faint">
-                Join our web of stores
+                Work in-house with us
               </h4>
               <p className="c-faint-font">
-                Stay on-demand with increased sales and reduced dependency on inventory when you 
+                Enjoy moving the needle towards a unified goal? Join our team in stitching a seamless experience for users. 
               </p>
             </div>
           </div>

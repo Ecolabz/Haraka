@@ -2,21 +2,22 @@
 .hero{
   .header-space{
     width: 100%;
-    height: 81px;
+    height: 100px;
     @include mediaM(750px) {
-      height: 62px;
+      height: 70px;
     }
   }
   .hero-spread{
     position: relative;
     width: 100%;
     margin: auto;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     display: grid;
     grid-template-columns: auto auto;
+    // padding-top: 100px;
     @include mediaM(950px) {
       display: block;
-      padding-top: calc(5vmin + 5vmax);
+      // padding-top: calc(5vmin + 5vmax);
     }
     .img-sect{
       display: flex;
@@ -89,7 +90,6 @@
             font-size: 1.1em;
           }
           h2{
-            padding-top: 0.8em;
             font-size: 1.6em;
             line-height: 1.6;
           } 
