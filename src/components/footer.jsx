@@ -10,13 +10,13 @@ function BaseInfo() {
       <div className="spread-info-web center-info-mobile font-weight-bold">
         <div className="my-2 py-1 media-links web-fade">
           <div>
-            <a href="/" className="mx-2">
+            <a href="https://twitter.com" className="mx-2">
               <i className="fa-brands fa-twitter increased-x"></i>
             </a>
           </div>
           <div>
-            <a href="/" className="mx-2">
-              <i className="fa-brands fa-twitter increased-x"></i>
+            <a href="https://www.instagram.com/" className="mx-2">
+              <i className="fa-brands fa-instagram increased-x"></i>
             </a>
           </div>
         </div>
@@ -25,13 +25,13 @@ function BaseInfo() {
         </div>
         <div className="my-2 py-1 media-links mobile-fade">
           <div>
-            <a href="/" className="mx-2">
+            <a href="https://twitter.com" className="mx-2">
               <i className="fa-brands fa-twitter increased-x"></i>
             </a>
           </div>
           <div>
-            <a href="/" className="mx-2">
-              <i className="fa-brands fa-twitter increased-x"></i>
+            <a href="https://www.instagram.com/" className="mx-2">
+              <i className="fa-brands fa-instagram increased-x"></i>
             </a>
           </div>
         </div>
