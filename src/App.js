@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.scss';
 
+
 function App() {
   useEffect(() => {
     AOS.init({

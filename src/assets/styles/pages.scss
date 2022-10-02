@@ -1,13 +1,14 @@
 @import "./variables.scss";
-.hero{
-  .header-space{
+@import "./mixins.scss";
+.hero {
+  .header-space {
     width: 100%;
     height: 100px;
     @include mediaM(750px) {
       height: 70px;
     }
   }
-  .hero-spread{
+  .hero-spread {
     position: relative;
     width: 100%;
     margin: auto;
@@ -19,53 +20,54 @@
       display: block;
       // padding-top: calc(5vmin + 5vmax);
     }
-    .img-sect{
+    .img-sect {
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       padding: 5em 8em 5em 2em;
-      .im-holder{
-        width: 80%;
-        margin: auto;
-        position: relative;
-      }
-      .floater-left{
-        position: absolute;
-        left: -3em;
-        top: 65%;
-        max-width: 50%;
-      }
-      .floater-right{
-        position: absolute;
-        right: -3em;
-        top: 35%;
-        max-width: 50%;
-      }
-      .floater-bottom{
-        position: absolute;
-        right: 16%;
-        bottom: -90px;
-        width: 170px;
-      }
+
+      // .im-holder{
+      //   width: 80%;
+      //   margin: auto;
+      //   position: relative;
+      // }
+      // .floater-left{
+      //   position: absolute;
+      //   left: -3em;
+      //   top: 65%;
+      //   max-width: 50%;
+      // }
+      // .floater-right{
+      //   position: absolute;
+      //   right: -3em;
+      //   top: 35%;
+      //   max-width: 50%;
+      // }
+      // .floater-bottom{
+      //   position: absolute;
+      //   right: 16%;
+      //   bottom: -90px;
+      //   width: 170px;
+      // }
       @include mediaM(950px) {
         padding: 0 5em;
       }
       @include mediaM(750px) {
         padding: 0 0 90px 0;
         .floater-left,
-        .floater-right{
+        .floater-right {
           display: none;
         }
-        .floater-bottom{
+        .floater-bottom {
           right: calc(50% - 85px);
         }
-        .im-holder{
+        .im-holder {
           width: 90%;
         }
       }
     }
-    .text-sect{
+    .text-sect {
       position: relative;
       display: flex;
       align-items: center;
@@ -76,27 +78,27 @@
         justify-content: center;
         text-align: center;
       }
-      .text-holder{
+      .text-holder {
         max-width: 450px;
         @include mediaW(1201px) {
           max-width: 550px;
         }
-        p{
+        p {
           font-size: 1.1em;
         }
         @include mediaM(950px) {
           width: 100%;
-          p{
+          p {
             font-size: 1.1em;
           }
-          h2{
+          h2 {
             font-size: 1.6em;
             line-height: 1.6;
-          } 
+          }
         }
-        h1{
+        h1 {
           font-weight: 700;
-        } 
+        }
         .info-grid {
           @include mediaM(950px) {
             margin: auto;
@@ -108,111 +110,247 @@
   }
 }
 
-.info{
-  .info-card{
-    background-color: #F4F4F4;
-    padding: 1em;
-    border-radius: 10px;
-    p{
-      margin-bottom: 0;
-      min-height: 120px;
-    }
-  }
-  .experience-image{
-    width: 90%;
-    max-width: 450px;
-    margin: auto;
-    position: relative;
-    .im-holder{
-      width: 85%;
-      margin: 10% 0 0 15%
-    }
-    .im-popup{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 35%;
-    }
-  }
-  .hr{
-    width: 80%;
-    margin: 2rem 0;
-  }
-}
+.welcome-section {
+  padding: 6rem 0;
+  .container {
+    .row-item {
+      @include flexItem(row, space-between);
+      align-items: center;
 
-.faq{
-  .faq-question{
-    padding: 10px;
-    transition: 0.3s ease;
-    border-top: 1px solid $black-faint4;
-    .answer{
-      transition: 0.3s ease;
-      max-height: 0;
-      overflow: hidden;
-      border-top: 1px solid $black-faint4;
-      opacity: 0;
-      padding-top: 1em;
-    }
-    .full{
-      max-height: 600px;
-      transition: 0.3s ease;
-      opacity: 1;
+      .phone-ui {
+        width: 42%;
+      }
+
+      .welcome-lead {
+        width: 45%;
+      }
+
+      h1 {
+        font-weight: bold;
+
+        font-size: 35px;
+      }
+
+      .col-item {
+        margin: 2rem 0;
+        h2 {
+          font-weight: bold;
+
+          font-size: 1.5em;
+        }
+
+        p {
+          color: #696662;
+          font-size: 1.12em;
+        }
+      }
     }
   }
 }
 
-.base-info{
+.what-we-offer {
+  padding: 5rem 0;
+
+  h2 {
+    font-weight: bold;
+    // font-family: $generalSans;
+    font-size: 35px;
+  }
+
+  h3 {
+    margin: 1rem 0;
+    color: #7d7d7d;
+  }
+
+  .offer-card {
+    background-color: #46a8b3;
+    padding: 2rem;
+    height: 16rem;
+    margin: 1rem 0;
+    border-radius: 0.8rem;
+
+    img {
+      width: 3rem;
+    }
+
+    h4,
+    p {
+      color: #fffcf9;
+      text-align: center;
+    }
+
+    h4 {
+      margin-top: 0.8rem;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+  }
+}
+
+/* FAQ */
+
+.faq-section {
+  padding: 5rem 0;
+
+  .title {
+    font-weight: bolder;
+    color: #000;
+    font-size: 35px;
+  }
+
+  .faq-card {
+    .faq {
+      .divider {
+        width: 100%;
+        height: 1px;
+        background-color: #d9dbe9;
+        margin: 0.5rem 0;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      // Layout
+      .row {
+        display: flex;
+
+        .col {
+          flex: 1;
+        }
+      }
+
+      /* Accordion styles */
+      .tabs {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .tab {
+        width: 100%;
+
+        overflow: hidden;
+
+        &-label {
+          display: flex;
+          justify-content: space-between;
+          padding: 1em;
+
+          font-weight: normal;
+
+          cursor: pointer;
+
+          font-weight: bold;
+
+          /* Icon */
+          // &:hover {
+          //   background: darken($white, 10%);
+          // }
+
+          &::after {
+            content: "\002B";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all 0.35s;
+          }
+        }
+
+        &-content {
+          max-height: 0;
+          padding: 0 1em;
+
+          transition: all 0.35s;
+        }
+
+        &-close {
+          display: flex;
+          justify-content: flex-end;
+          padding: 1em;
+          font-size: 0.75em;
+          background: #46a8b3;
+          cursor: pointer;
+
+          &:hover {
+            background: darken(#46a8b3, 10%);
+          }
+        }
+      }
+
+      // :checked
+      input:checked {
+        + .tab-label {
+          color: #46a8b3;
+
+          &::after {
+            transform: rotate(45deg);
+          }
+        }
+
+        ~ .tab-content {
+          max-height: 100vh;
+          padding: 1em;
+        }
+      }
+    }
+  }
+}
+
+.base-info {
   position: relative;
-  .base-color{
+  .base-color {
     width: 100%;
     height: calc(70% - 150px);
     bottom: 0;
     left: 0;
     position: absolute;
-    background-color: #F8F8FC;
+    background-color: #f8f8fc;
   }
-  .info-card{
-    border: 1px solid #E3E3E3;
+  .info-card {
+    border: 1px solid #e3e3e3;
     border-radius: 20px;
     background-color: $white;
     position: relative;
     width: 90%;
     margin: auto;
     padding: 0 1em 2em;
-    .img-cube{
+    .img-cube {
       width: 70%;
       max-width: 200px;
       margin: 2vh auto;
-      img{
+      img {
         width: 100%;
       }
     }
-    p{
+    p {
       min-height: 96px;
       margin-bottom: 0 !important;
     }
   }
 }
-.pre-footer{
-  .footer-card{
+.pre-footer {
+  .footer-card {
     width: 90%;
     max-width: 1200px;
     margin: 6vmax auto 5vmax;
     padding: 3vmax 4vmax 1vmax;
-    background-color: #007971;
+    background-color: #46a8b3;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 65% 5% 30%;
-    .text-sect{
+    .text-sect {
       padding-top: 4vh;
-      h2{
+      h2 {
         color: $white;
       }
       @include mediaW(768px) {
         padding-top: 8vh;
       }
       @include mediaM(767px) {
-        h2{
+        h2 {
           width: 70%;
         }
       }
@@ -221,8 +359,8 @@
       padding: 10px 20px;
       border: none;
     }
-    .image{
-      div{
+    .image {
+      div {
         width: 80%;
         margin: auto;
       }
@@ -233,9 +371,9 @@
       border-radius: 0;
       margin-bottom: 0;
       padding-bottom: 0;
-      .image{
+      .image {
         // display: none;
-        margin-top: 10vh
+        margin-top: 10vh;
       }
       button {
         width: 100%;
@@ -244,36 +382,391 @@
   }
 }
 
-.sub-about{
+.sub-about {
   min-height: 100vh;
-  .imh{
+  .imh {
     @include mediaM(550px) {
       width: 96%;
     }
   }
 }
 
-.footer{
-  background-color: $black;
-  color: $white;
-  padding: 2vmax 4vmax;
-  .media-links{
-    div{
-      display: inline-block;
-      a{
-        width: 50px;
-        height: 50px;
-        display: flex;
+.footer-divider {
+  background-color: rgba(145, 144, 140, 1);
+  height: 1px;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+footer {
+  padding: 4rem 0;
+
+  .footer-row {
+    @include flexItem(row, space-between);
+    width: 88%;
+    margin: 0 auto;
+
+    .footer-container {
+      width: 30%;
+
+      h5 {
+        color: #46a8b3;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        display: block;
+        margin: 1rem 0;
+      }
+
+      img {
+        width: 1.8rem;
+        margin-right: 0.8rem;
+      }
+    }
+  }
+
+  p {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .welcome-section {
+    padding: 6rem 0;
+
+    .container {
+      .row-item {
+        @include flexItem(column-reverse, space-around);
         align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 1px solid $white;
-        transition: 0.3s ease;
-        &:hover{
-          background-color: $white;
-          color: $black;
+        .phone-ui {
+          width: 85%;
+          margin-top: 1.5rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .welcome-lead {
+          width: 100%;
+        }
+
+        h1 {
+          margin-top: 2rem;
+          font-size: 1.8em;
+          text-align: center;
+        }
+
+        .col-item {
+          margin: 2rem 0;
+          h2 {
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+          }
         }
       }
+    }
+  }
+
+  .what-we-offer {
+    padding: 4rem 0;
+
+    .offer-card {
+      height: 16.5rem;
+
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .faq-section {
+    padding: 3rem 0;
+
+    .title {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .faq-card {
+      .faq {
+        .tab-content {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 4rem 0;
+
+    .footer-row {
+      @include flexItem(row, space-between);
+      width: 90%;
+      margin: 0 auto;
+
+      .footer-container {
+        width: 48%;
+
+        margin-bottom: 2rem;
+        h5 {
+          margin-bottom: 1rem;
+        }
+
+        a {
+          display: block;
+          margin: 1rem 0;
+        }
+
+        img {
+          width: 1.8rem;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-section {
+    padding: 6rem 0 2rem 0;
+
+    .container {
+      .row-item {
+        @include flexItem(column-reverse, space-around);
+        align-items: center;
+        .phone-ui {
+          width: 85%;
+          margin-top: 1.5rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .welcome-lead {
+          width: 100%;
+        }
+
+        h1 {
+          margin-top: 2rem;
+
+          text-align: center;
+        }
+
+        .col-item {
+          margin: 2rem 0;
+          h2 {
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .what-we-offer {
+    padding: 4rem 0;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+
+    .offer-card {
+      height: 18rem;
+
+      h4 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 0.95em;
+      }
+    }
+  }
+
+  .faq-section {
+    padding: 3rem 0;
+
+    .title {
+      font-size: 28px;
+    }
+
+    .faq-card {
+      .faq {
+        .tab-content {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 4rem 0;
+
+    .footer-row {
+      @include flexItem(row, space-between);
+      width: 90%;
+      margin: 0 auto;
+
+      .footer-container {
+        width: 48%;
+
+        margin-bottom: 2rem;
+        h5 {
+          margin-bottom: 1rem;
+        }
+
+        a {
+          display: block;
+          margin: 1rem 0;
+        }
+
+        img {
+          width: 1.8rem;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome-section {
+    padding: 3rem 0;
+
+    .container {
+      .row-item {
+        @include flexItem(column-reverse, space-around);
+        align-items: center;
+        .phone-ui {
+          width: 95%;
+          margin-top: 2rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .welcome-lead {
+          width: 100%;
+        }
+
+        h1 {
+          margin-top: 2rem;
+          font-size: 2em;
+          text-align: center;
+        }
+        .col-item {
+          margin: 2rem 0;
+          h2 {
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .what-we-offer {
+    padding: 4rem 0 6rem 0;
+
+    h2 {
+      font-size: 23px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .offer-card {
+      height: 16rem;
+
+      h4 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .faq-section {
+    padding: 3rem 0;
+
+    .title {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .faq-card {
+      .faq {
+        .tab-content {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 4rem 0;
+
+    .footer-row {
+      @include flexItem(row, space-between);
+      width: 93%;
+      margin: 0 auto;
+
+      .footer-container {
+        width: 48%;
+
+        margin-bottom: 2rem;
+        h5 {
+          margin-bottom: 1rem;
+        }
+
+        a {
+          display: block;
+          margin: 1rem 0;
+        }
+
+        img {
+          width: 1.8rem;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+
+    p {
+      margin-top: 2rem;
     }
   }
 }

@@ -1,5 +1,5 @@
 
-import logo from './logo.png';
+import logo from './logo.svg';
 import heroImage from './hero-image.png';
 import popupLeft from './hero-img-popup-left.png';
 import popupRight from './hero-img-popup-right.png';
@@ -15,6 +15,7 @@ import offerIconSuperSafe from './offer-icon-super-safe.svg';
 import aboutImage from './about-image.jpg';
 import footerPhone from './footer-phone.png';
 
+import phone from "./phone.png";
 
 
 export {
@@ -33,4 +34,5 @@ export {
     offerIconSuperSafe,
     aboutImage,
     footerPhone,
+    phone,
 };

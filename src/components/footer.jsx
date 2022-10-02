@@ -1,47 +1,46 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaqLink } from "../constants/shared-services";
+import { linkedIn, meta, twitter } from "../assets/icons";
 import "../assets/styles/pages.scss";
 
 function BaseInfo() {
-
+  const date = new Date().getFullYear();
   return (
-    <div className="footer">
-      <div className="spread-info-web center-info-mobile font-weight-bold">
-        <div className="my-2 py-1 media-links web-fade">
-          <div>
-            <a href="https://twitter.com" className="mx-2">
-              <i className="fa-brands fa-twitter increased-x"></i>
-            </a>
+    <div>
+      <div className="footer-divider"></div>
+      <footer>
+        <div className="footer-row">
+          <div className="footer-container">
+            <h5>Contact</h5>
+            <Link to="/">hello@haraka.com</Link>
           </div>
-          <div>
-            <a href="https://www.instagram.com/" className="mx-2">
-              <i className="fa-brands fa-instagram increased-x"></i>
-            </a>
+          <div className="footer-container">
+            <h5>Explore</h5>
+            <FaqLink />
+            <Link to="/">Careers</Link>
+          </div>
+          <div className="footer-container">
+            <h5>Contact</h5>
+            <Link to="/">
+              {" "}
+              <img src={linkedIn} alt="Instagram" />
+              LinkedIn
+            </Link>
+            <Link to="/">
+              {" "}
+              <img src={meta} alt="Meta" />
+              Meta
+            </Link>
+            <Link to="/">
+              {" "}
+              <img src={twitter} alt="Twitter" />
+              Twitter
+            </Link>
           </div>
         </div>
-        <div className="mt-2 py-1">
-          <a href="mailto:hello@haraka.com">hello@haraka.com</a>
-        </div>
-        <div className="my-2 py-1 media-links mobile-fade">
-          <div>
-            <a href="https://twitter.com" className="mx-2">
-              <i className="fa-brands fa-twitter increased-x"></i>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.instagram.com/" className="mx-2">
-              <i className="fa-brands fa-instagram increased-x"></i>
-            </a>
-          </div>
-        </div>
-        <div className="my-2 py-1">
-          <Link to="about">
-            <span className="px-2 mx-2 clickable">About</span>
-          </Link>
-          <span className="px-2 mx-2 clickable"><FaqLink/></span>
-        </div>
-      </div>
+        <p className="text-center">© {date} Haraka - All Rights reserved.</p>
+      </footer>
     </div>
   );
 }

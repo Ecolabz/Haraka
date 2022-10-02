@@ -15,11 +15,16 @@ function AboutPage() {
   return (
     <div className="about">
       <Header />
+
       <div className="sub-about w96 max 1200">
         <div className="py-5"></div>
+        
         <div className="row py-5">
           <div className="col-md-6 mobile-fade">
-            <div className="w90 max450 center-info imh rad-10-im" data-aos="flip-left">
+            <div
+              className="w90 max450 center-info imh rad-10-im"
+              data-aos="flip-left"
+            >
               <img src={aboutImage} alt="" className="rad-10-im" />
             </div>
           </div>
@@ -29,9 +34,11 @@ function AboutPage() {
                 We are here to make your life easy
               </h2>
               <p className="increased-soft c-faint">
-                Haraka makes your life easier as you can order groceries , food and services from the shops and small 
-                businesses you are already familiar with and get it delivered to you on the same day (even within 1 hour) to 
-                save your precious time and money with just a few clicks!
+                Haraka makes your life easier as you can order groceries , food
+                and services from the shops and small businesses you are already
+                familiar with and get it delivered to you on the same day (even
+                within 1 hour) to save your precious time and money with just a
+                few clicks!
               </p>
             </div>
           </div>
@@ -42,7 +49,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
