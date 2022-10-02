@@ -6,19 +6,21 @@ import "../assets/styles/pages.scss";
 
 function Hero() {
   return (
-    <div className="hero" id="home">
-      <div className="header-space"></div>
-      <div className="hero-spread">
-        <div className="text-sect">
-          <div className="text-holder">
+
+    <div>
+      <div className="hero-section">
+        <div className="hero-container">
+          <div className="hero-text">
             <h2 className="">
               Your best foods and groceries delivered just in-time
             </h2>
-            <p className=" c-faint-font">
+
+            <p className=" my-4">
               Enjoy the ease of ordering on time from the right place at the
               best cost-all while clicking a button
             </p>
-            <div className="info-grid max350">
+
+            <div className="info-grid max350 center-item">
               <div
                 className="imh clickable-shadow rad-10 mb-3"
                 data-aos="fade-up"
@@ -40,12 +42,13 @@ function Hero() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="img-sect">
-          <div className="relative w100">
-            <div className="imh im-holder">
-              <img src={heroImage} alt="" data-aos="zoom-out" />
-            </div>
+          <div className="vehicle">
+            <img
+              src={heroImage}
+              alt=""
+              data-aos="zoom-out"
+              className="img-fluid"
+            />
           </div>
         </div>
       </div>
