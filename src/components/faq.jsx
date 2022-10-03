@@ -3,7 +3,7 @@ import React from "react";
 function Faq() {
   return (
     <div className="faq-section">
-      <h2 className="text-center mb-4 title">Frequenty asked questions</h2>
+      <h2 className="text-center mb-4 title">Frequenty Asked Questions</h2>
       <p className="text-center my-5">
         We’ve collated answers to some questions you might have and we hope this
         helps you understand our app.
