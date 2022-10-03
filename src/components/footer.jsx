@@ -21,7 +21,7 @@ function BaseInfo() {
             <Link to="/">Careers</Link>
           </div>
           <div className="footer-container">
-            <h5>Contact</h5>
+            <h5>Follow Us</h5>
             <Link to="/">
               {" "}
               <img src={linkedIn} alt="Instagram" />
