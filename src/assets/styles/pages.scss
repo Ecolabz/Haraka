@@ -412,8 +412,8 @@ footer {
         width: 100%;
 
         h2 {
-          font-size: 1.8em;
           text-align: center;
+          font-size: $mbHeroFs;
         }
 
         p {
@@ -490,7 +490,7 @@ footer {
 
     .container {
       .row-item {
-        @include flexItem(column-reverse, space-around);
+        @include flexItem(column, space-around);
         align-items: center;
         .phone-ui {
           width: 85%;
@@ -631,8 +631,8 @@ footer {
         width: 100%;
 
         h2 {
-          font-size: 1.8em;
           text-align: center;
+          font-size: $mbHeroFs;
         }
 
         p {
@@ -708,7 +708,7 @@ footer {
 
     .container {
       .row-item {
-        @include flexItem(column-reverse, space-around);
+        @include flexItem(column, space-around);
         align-items: center;
         .phone-ui {
           width: 85%;
@@ -845,8 +845,8 @@ footer {
         width: 100%;
 
         h2 {
-          font-size: 1.8em;
           text-align: center;
+          font-size: $mbHeroFs;
         }
 
         p {
@@ -858,8 +858,7 @@ footer {
 
       .vehicle {
         width: 100%;
-
-        height: 19rem;
+        height: 21rem;
 
         img {
           margin-top: 3rem;
@@ -920,7 +919,7 @@ footer {
 
     .container {
       .row-item {
-        @include flexItem(column-reverse, space-around);
+        @include flexItem(column, space-around);
         align-items: center;
         .phone-ui {
           width: 95%;
