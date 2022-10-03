@@ -6,7 +6,6 @@ import "../assets/styles/pages.scss";
 
 function Hero() {
   return (
-
     <div>
       <div className="hero-section">
         <div className="hero-container">
@@ -15,7 +14,7 @@ function Hero() {
               Your best foods and groceries delivered just in-time
             </h2>
 
-            <p className=" my-4">
+            <p className="my-4">
               Enjoy the ease of ordering on time from the right place at the
               best cost-all while clicking a button
             </p>

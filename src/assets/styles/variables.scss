@@ -1,6 +1,6 @@
 // Color variables
 
-$primary-blue-bright: #EBFBFF;
+$primary-blue-bright: #ebfbff;
 $primary-blue: rgb(0, 103, 219);
 $primary-blue-hover: rgb(0, 81, 173);
 $primary-blue-active: #00336d;
@@ -11,21 +11,20 @@ $primary-blue-faint3: rgba(0, 103, 219, 0.2);
 $primary-blue-faint4: rgba(0, 103, 219, 0.1);
 $primary-blue-faint5: rgba(0, 103, 219, 0.06);
 
-
 $primary-blue-hover-faint1: rgba(0, 81, 173, 0.7);
 $primary-blue-hover-faint2: rgba(0, 81, 173, 0.45);
 $primary-blue-hover-faint3: rgba(0, 81, 173, 0.2);
 $primary-blue-hover-faint4: rgba(0, 81, 173, 0.1);
 $primary-blue-hover-faint5: rgba(0, 81, 173, 0.06);
 
-$header-blue: #E7F4FF;
+$header-blue: #e7f4ff;
 
 $primary-shade: #041926;
 $primary-shade-light: #07263a;
 
-$primary-bg: #F6F9FF;
+$primary-bg: #f6f9ff;
 
-$bright-blue: #283FFF;
+$bright-blue: #283fff;
 $bright-blue-hover: #0315b9;
 $bright-blue-active: #000c74;
 
@@ -33,7 +32,7 @@ $primary-pale: #ba3a7c;
 $primary-pale-hover: #9b2b65;
 $primary-pale-active: #6e1744;
 
-$secondary-pale: #A771EC;
+$secondary-pale: #a771ec;
 $secondary-pale-hover: #713ab8;
 
 $primary-pale-faint1: rgba(186, 58, 124, 0.7);
@@ -95,6 +94,13 @@ $pink: #ff00b5;
 $dirty-green: #587d71;
 
 $transparent: rgba(0, 0, 0, 0);
+
+$heroFontSize: 22px;
+$headingFontSize: 35px;
+$subheadingFontSize: 18px;
+
+$mbHeadingFs: 1.7em;
+$mbSubHeadingFs: 16px;
 
 // Mixins
 

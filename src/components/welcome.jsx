@@ -1,5 +1,5 @@
 import React from "react";
-import { phone } from "../assets/images";
+import { percentageCut } from "../assets/images";
 
 const welcome = () => {
   return (
@@ -7,14 +7,6 @@ const welcome = () => {
       <div className="welcome-section">
         <div className="container hidden">
           <div className="row-item">
-            <div className="phone-ui">
-              <img
-                src={phone}
-                className="img-fluid"
-                alt=""
-                data-aos="zoom-out"
-              />
-            </div>
             <div
               className="welcome-lead"
               data-aos="fade-up"
@@ -44,6 +36,15 @@ const welcome = () => {
                   in stitching a seamless experience for users.
                 </p>
               </div>
+            </div>
+
+            <div className="phone-ui">
+              <img
+                src={percentageCut}
+                className="img-fluid"
+                alt=""
+                data-aos="zoom-out"
+              />
             </div>
           </div>
         </div>

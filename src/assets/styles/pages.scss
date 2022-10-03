@@ -11,10 +11,63 @@
 
     .hero-text {
       width: 48%;
+
+      p {
+        font-size: $heroFontSize;
+      }
+
+      .center-item {
+        margin: 2.4rem 0;
+      }
     }
 
     .vehicle {
       width: 50%;
+      height: 27.5rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.steps-section {
+  padding: 6rem 0;
+  .container {
+    .row-item {
+      @include flexItem(row, space-between);
+      align-items: center;
+
+      .phone-ui {
+        width: 42%;
+      }
+
+      .step-lead {
+        width: 45%;
+      }
+
+      h1 {
+        font-weight: bold;
+
+        font-size: $headingFontSize;
+      }
+
+      .row-item {
+        margin: 2rem 0;
+        @include flexItem(row, flex-start);
+
+        .img {
+          width: 10%;
+        }
+
+        p {
+          width: 80%;
+          color: #696662;
+          font-size: $subheadingFontSize;
+        }
+      }
     }
   }
 }
@@ -37,7 +90,7 @@
       h1 {
         font-weight: bold;
 
-        font-size: 35px;
+        font-size: $headingFontSize;
       }
 
       .col-item {
@@ -50,7 +103,7 @@
 
         p {
           color: #696662;
-          font-size: 1.12em;
+          font-size: $subheadingFontSize;
         }
       }
     }
@@ -62,13 +115,13 @@
 
   h2 {
     font-weight: bold;
-    // font-family: $generalSans;
     font-size: 35px;
   }
 
   h3 {
     margin: 1rem 0;
     color: #7d7d7d;
+    font-size: $heroFontSize;
   }
 
   .offer-card {
@@ -93,7 +146,7 @@
     }
 
     p {
-      font-size: 1.1em;
+      font-size: $subheadingFontSize;
     }
   }
 }
@@ -104,13 +157,13 @@
   padding: 5rem 0;
 
   .title {
-    font-weight: bolder;
+    font-weight: 700;
     color: #000;
     font-size: 35px;
   }
 
   p {
-    font-size: 20px;
+    font-size: $heroFontSize;
   }
 
   .faq-card {
@@ -152,11 +205,10 @@
           justify-content: space-between;
           padding: 1em;
 
-          font-weight: normal;
-
           cursor: pointer;
 
-          font-weight: bold;
+          font-weight: 700;
+          font-size: $heroFontSize;
 
           /* Icon */
           // &:hover {
@@ -176,7 +228,8 @@
           max-height: 0;
           padding: 0 1em;
 
-          transition: all 0.35s;
+          transition: all 0.2s;
+          font-size: $subheadingFontSize;
         }
 
         &-close {
@@ -305,7 +358,7 @@
 }
 
 .footer-divider {
-  background-color: rgba(240,242,243,.85);
+  background-color: rgba(240, 242, 243, 0.85);
   height: 1px;
   width: 100%;
   margin-top: 3rem;
@@ -330,6 +383,7 @@ footer {
       a {
         display: block;
         margin: 1rem 0;
+        font-size: $subheadingFontSize;
       }
 
       img {
@@ -341,11 +395,11 @@ footer {
 
   p {
     margin-top: 2rem;
+    font-size: $subheadingFontSize;
   }
 }
 
 @media screen and (max-width: 992px) {
-
   .hero-section {
     padding: 7rem 0 3rem 0;
     margin-top: 3rem;
@@ -354,32 +408,78 @@ footer {
       width: 87%;
       margin: 0 auto;
 
-      .center-item {
-        margin: 2.2rem auto 0 auto;
-
-      }
-
       .hero-text {
         width: 100%;
+
+        h2 {
+          font-size: 1.8em;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+          font-size: 1.1em;
+        }
+
+        .center-item {
+          margin: 2.2rem auto 0 auto;
+        }
       }
 
       .vehicle {
         width: 100%;
-      }
 
-      h2 {
-        font-size: 1.8em;
-        text-align: center;
-      }
+        height: 35rem;
 
-      p {
-        font-size: 1.1em;
-        text-align: center;
-      }
-
-      .vehicle {
         img {
-          margin-top: 3rem;
+          margin: 3rem 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .steps-section {
+    padding: 6rem 0 2rem 0;
+
+    .container {
+      .row-item {
+        @include flexItem(column-reverse, space-around);
+        align-items: center;
+        .phone-ui {
+          width: 85%;
+          margin-top: 1.5rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .step-lead {
+          width: 100%;
+        }
+
+        h1 {
+          margin-top: 2rem;
+          font-size: 1.9em;
+          text-align: center;
+        }
+
+        .row-item {
+          margin: 2rem 0;
+
+          @include flexItem(row, flex-start);
+
+          .img {
+            width: 8%;
+          }
+
+          p {
+            width: 80%;
+
+            font-size: $mbSubHeadingFs;
+          }
         }
       }
     }
@@ -415,10 +515,12 @@ footer {
           margin: 2rem 0;
           h2 {
             text-align: center;
+            font-size: 1.7em;
           }
 
           p {
             text-align: center;
+            font-size: $mbSubHeadingFs;
           }
         }
       }
@@ -428,11 +530,23 @@ footer {
   .what-we-offer {
     padding: 4rem 0;
 
+    h2 {
+      font-size: $mbHeadingFs;
+    }
+
+    h3 {
+      font-size: 1.4em;
+    }
+
     .offer-card {
       height: 16.5rem;
 
+      h4 {
+        font-size: $mbHeadingFs;
+      }
+
       p {
-        font-size: 1em;
+        font-size: $mbSubHeadingFs;
       }
     }
   }
@@ -441,20 +555,20 @@ footer {
     padding: 3rem 0;
 
     .title {
-      font-size: 28px;
+      font-size: $mbHeadingFs;
     }
 
     p {
-      font-size: 20px;
+      font-size: $mbSubHeadingFs;
     }
 
     .faq-card {
       .faq {
         .tab-label {
-          font-size: 1.1em;
+          font-size: $mbSubHeadingFs;
         }
         .tab-content {
-          font-size: 1em;
+          font-size: $mbSubHeadingFs;
         }
       }
     }
@@ -479,6 +593,11 @@ footer {
         a {
           display: block;
           margin: 1rem 0;
+          font-size: $mbSubHeadingFs;
+        }
+
+        .clickable {
+          font-size: $mbSubHeadingFs;
         }
 
         img {
@@ -490,6 +609,7 @@ footer {
 
     p {
       margin-top: 2rem;
+      font-size: $mbSubHeadingFs;
     }
   }
 }
@@ -505,30 +625,79 @@ footer {
 
       .center-item {
         margin: 2.2rem auto 0 auto;
-
       }
 
       .hero-text {
         width: 100%;
+
+        h2 {
+          font-size: 1.8em;
+          text-align: center;
+        }
+
+        p {
+          font-size: 1.1em;
+          text-align: center;
+          font-size: $mbSubHeadingFs;
+        }
       }
 
       .vehicle {
         width: 100%;
       }
 
-      h2 {
-        font-size: 1.8em;
-        text-align: center;
-      }
-
-      p {
-        font-size: 1.1em;
-        text-align: center;
-      }
-
       .vehicle {
+        height: 30rem;
+
         img {
-          margin-top: 3rem;
+          margin: 3rem 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .steps-section {
+    padding: 6rem 0 2rem 0;
+
+    .container {
+      .row-item {
+        @include flexItem(column-reverse, space-around);
+        align-items: center;
+        .phone-ui {
+          width: 85%;
+          margin-top: 1.5rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .step-lead {
+          width: 100%;
+        }
+
+        h1 {
+          margin-top: 2rem;
+          font-size: 1.9em;
+          text-align: center;
+        }
+
+        .row-item {
+          margin: 2rem 0;
+
+          @include flexItem(row, flex-start);
+
+          .img {
+            width: 11%;
+          }
+
+          p {
+            width: 80%;
+
+            font-size: $mbSubHeadingFs;
+          }
         }
       }
     }
@@ -564,10 +733,12 @@ footer {
           margin: 2rem 0;
           h2 {
             text-align: center;
+            font-size: 1.7em;
           }
 
           p {
             text-align: center;
+            font-size: $mbSubHeadingFs;
           }
         }
       }
@@ -578,22 +749,22 @@ footer {
     padding: 4rem 0;
 
     h2 {
-      font-size: 24px;
+      font-size: $mbHeadingFs;
     }
 
     h3 {
-      font-size: 17px;
+      font-size: 1.4em;
     }
 
     .offer-card {
-      height: 18rem;
+      height: 20rem;
 
       h4 {
-        font-size: 20px;
+        font-size: $mbHeadingFs;
       }
 
       p {
-        font-size: 0.95em;
+        font-size: $mbSubHeadingFs;
       }
     }
   }
@@ -602,16 +773,20 @@ footer {
     padding: 3rem 0;
 
     .title {
-      font-size: 28px;
+      font-size: $mbHeadingFs;
+    }
+
+    p {
+      font-size: $mbSubHeadingFs;
     }
 
     .faq-card {
       .faq {
         .tab-label {
-          font-size: 1.1em;
+          font-size: $mbSubHeadingFs;
         }
         .tab-content {
-          font-size: 1em;
+          font-size: $mbSubHeadingFs;
         }
       }
     }
@@ -636,6 +811,11 @@ footer {
         a {
           display: block;
           margin: 1rem 0;
+          font-size: $mbSubHeadingFs;
+        }
+
+        .clickable {
+          font-size: $mbSubHeadingFs;
         }
 
         img {
@@ -647,6 +827,7 @@ footer {
 
     p {
       margin-top: 2rem;
+      font-size: $mbSubHeadingFs;
     }
   }
 }
@@ -662,25 +843,73 @@ footer {
 
       .hero-text {
         width: 100%;
+
+        h2 {
+          font-size: 1.8em;
+          text-align: center;
+        }
+
+        p {
+          font-size: 1.1em;
+          text-align: center;
+          font-size: $mbSubHeadingFs;
+        }
       }
 
       .vehicle {
         width: 100%;
-      }
 
-      h2 {
-        font-size: 1.8em;
-        text-align: center;
-      }
+        height: 19rem;
 
-      p {
-        font-size: 1.1em;
-        text-align: center;
-      }
-
-      .vehicle {
         img {
           margin-top: 3rem;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .steps-section {
+    padding: 3rem 0;
+
+    .container {
+      .row-item {
+        @include flexItem(column-reverse, space-around);
+        align-items: center;
+        .phone-ui {
+          width: 95%;
+          margin-top: 2rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .step-lead {
+          width: 100%;
+        }
+
+        h1 {
+          margin-top: 2rem;
+          font-size: 2em;
+          text-align: center;
+        }
+
+        .row-item {
+          margin: 2rem 0;
+
+          @include flexItem(row, flex-start);
+
+          .img {
+            width: 15%;
+          }
+
+          p {
+            width: 80%;
+
+            font-size: $mbSubHeadingFs;
+          }
         }
       }
     }
@@ -715,10 +944,12 @@ footer {
           margin: 2rem 0;
           h2 {
             text-align: center;
+            font-size: 1.7em;
           }
 
           p {
             text-align: center;
+            font-size: $mbSubHeadingFs;
           }
         }
       }
@@ -729,22 +960,22 @@ footer {
     padding: 4rem 0 6rem 0;
 
     h2 {
-      font-size: 23px;
+      font-size: $mbHeadingFs;
     }
 
     h3 {
-      font-size: 16px;
+      font-size: 1.4em;
     }
 
     .offer-card {
       height: 16rem;
 
       h4 {
-        font-size: 20px;
+        font-size: $mbHeadingFs;
       }
 
       p {
-        font-size: 1em;
+        font-size: $mbSubHeadingFs;
       }
     }
   }
@@ -753,20 +984,21 @@ footer {
     padding: 3rem 0;
 
     .title {
-      font-size: 25px;
+      font-size: $mbHeadingFs;
+      font-weight: 800;
     }
 
     p {
-      font-size: 15px;
+      font-size: $mbSubHeadingFs;
     }
 
     .faq-card {
       .faq {
         .tab-label {
-          font-size: 1.1em;
+          font-size: $mbSubHeadingFs;
         }
         .tab-content {
-          font-size: 1em;
+          font-size: $mbSubHeadingFs;
         }
       }
     }
@@ -791,6 +1023,11 @@ footer {
         a {
           display: block;
           margin: 1rem 0;
+          font-size: $mbSubHeadingFs;
+        }
+
+        .clickable {
+          font-size: $mbSubHeadingFs;
         }
 
         img {
@@ -802,6 +1039,7 @@ footer {
 
     p {
       margin-top: 2rem;
+      font-size: $mbSubHeadingFs;
     }
   }
 }

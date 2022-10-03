@@ -14,6 +14,7 @@ import offerIconSaveTime from './offer-icon-save-time.svg';
 import offerIconSuperSafe from './offer-icon-super-safe.svg';
 import aboutImage from './about-image.jpg';
 import footerPhone from './footer-phone.png';
+import percentageCut from "./percentage-cut.png";
 
 import phone from "./phone.png";
 
@@ -35,4 +36,5 @@ export {
     aboutImage,
     footerPhone,
     phone,
+    percentageCut,
 };

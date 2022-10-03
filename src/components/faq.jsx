@@ -3,7 +3,7 @@ import React from "react";
 function Faq() {
   return (
     <div className="faq-section">
-      <div className="h3 text-center mb-4 title">Frequenty asked questions</div>
+      <h2 className="text-center mb-4 title">Frequenty asked questions</h2>
       <p className="text-center my-5">
         We’ve collated answers to some questions you might have and we hope this
         helps you understand our app.
@@ -48,11 +48,11 @@ function Faq() {
                       </label>
 
                       <div className="tab-content">
-                        'You can download Haraka by searching the Playstore or
-                        App Store on your phone.', 'Launch the Haraka app and
-                        then click the Create button on your phone.', 'Provide
+                        You can download Haraka by searching the Playstore or
+                        App Store on your phone, Launch the Haraka app and
+                        then click the Create button on your phone, Provide
                         your first name, last name, phone number, email address,
-                        and any referral codes you have.',
+                        and any referral codes you have.
                       </div>
                     </div>
                   </div>

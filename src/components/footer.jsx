@@ -13,7 +13,7 @@ function BaseInfo() {
         <div className="footer-row">
           <div className="footer-container">
             <h5>Contact</h5>
-            <Link to="/">hello@haraka.com</Link>
+            <a href="mailto:hello@haraka.shop">hello@haraka.shop</a>
           </div>
           <div className="footer-container">
             <h5>Explore</h5>

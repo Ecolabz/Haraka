@@ -13,8 +13,8 @@ function Info() {
   return (
     <div className="what-we-offer">
       <div className="container">
-        <h2 className="text-center hidden">What We Offer</h2>
-        <h3 className="text-center hidden-alternate">
+        <h2 className="text-center">What We Offer</h2>
+        <h3 className="text-center">
           We offer an outstanding service on-time everytime
         </h3>
         <div className="row align-items-center justify-content-center mt-5">

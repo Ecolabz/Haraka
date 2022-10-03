@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import Header from "../../components/header";
 import Hero from "../../components/hero";
+import Steps from "../../components/steps";
 import Welcome from "../../components/welcome";
 import Info from "../../components/info";
 import Faq from "../../components/faq";
@@ -21,6 +22,7 @@ function HomePage() {
     <div className="home">
       <Header />
       <Hero />
+      <Steps/>
       <Welcome/>
       <Info/>
       <Faq/>
