@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaqLink } from "../constants/shared-services";
-import { instagram, meta, twitter } from "../assets/icons";
+import { instagram, twitter } from "../assets/icons";
 import "../assets/styles/pages.scss";
 
 function BaseInfo() {
