@@ -14,7 +14,11 @@ function BaseInfo() {
               data-aos="fade-up"
               data-aos-delay="1000"
             >
-              <a href="/">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.haraka.fooddelivery"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={googleButton} alt="" />
               </a>
             </div>

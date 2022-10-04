@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaqLink } from "../constants/shared-services";
-import { linkedIn, meta, twitter } from "../assets/icons";
+import { instagram, meta, twitter } from "../assets/icons";
 import "../assets/styles/pages.scss";
 
 function BaseInfo() {
@@ -18,25 +18,29 @@ function BaseInfo() {
           <div className="footer-container">
             <h5>Explore</h5>
             <FaqLink />
-            <Link to="/">Careers</Link>
+            <Link to="/about">About Us</Link>
           </div>
           <div className="footer-container">
             <h5>Follow Us</h5>
-            <Link to="/">
+            <a
+              href="https://instagram.com/haraka_shop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
-              <img src={linkedIn} alt="Instagram" />
-              LinkedIn
-            </Link>
-            <Link to="/">
-              {" "}
-              <img src={meta} alt="Meta" />
-              Meta
-            </Link>
-            <Link to="/">
+              <img src={instagram} alt="Instagram" />
+              Instagram
+            </a>
+
+            <a
+              href="https://twitter.com/harakashop?s=21&t=FI6veeEfoOcqeMw20SAlcw"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               <img src={twitter} alt="Twitter" />
               Twitter
-            </Link>
+            </a>
           </div>
         </div>
         <p className="text-center">© {date} Haraka - All Rights reserved.</p>

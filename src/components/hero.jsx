@@ -25,7 +25,11 @@ function Hero() {
                 data-aos="fade-up"
                 data-aos-delay="1000"
               >
-                <a href="/">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.haraka.fooddelivery"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={googleButton} alt="" />
                 </a>
               </div>
@@ -35,7 +39,7 @@ function Hero() {
                 data-aos="fade-up"
                 data-aos-delay="1200"
               >
-                <a href="/">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <img src={appleButton} alt="" />
                 </a>
               </div>
