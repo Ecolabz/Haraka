@@ -357,6 +357,32 @@
   }
 }
 
+.terms {
+  padding: 8rem 0;
+  width: 87%;
+
+  margin: 0 auto;
+
+  h2 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 3rem;
+  }
+
+  p {
+    color: #696662;
+    font-size: $subheadingFontSize;
+
+    a {
+      font-size: $subheadingFontSize;
+    }
+  }
+
+  h3 {
+    margin-top: 4rem;
+  }
+}
+
 .footer-divider {
   background-color: rgba(240, 242, 243, 0.85);
   height: 1px;
@@ -574,6 +600,30 @@ footer {
           font-size: $mbSubHeadingFs;
         }
       }
+    }
+  }
+
+  .terms {
+    padding: 7rem 0;
+    width: 95%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: $mbHeadingFs;
+      margin-top: 3rem;
+    }
+
+    p {
+      font-size: $mbSubHeadingFs;
+
+      a {
+        font-size: $mbSubHeadingFs;
+      }
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin-top: 3.5rem;
     }
   }
 
@@ -798,6 +848,30 @@ footer {
     }
   }
 
+  .terms {
+    padding: 6rem 0;
+    width: 95%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: $mbHeadingFs;
+      margin-top: 3rem;
+    }
+
+    p {
+      font-size: $mbSubHeadingFs;
+
+      a {
+        font-size: $mbSubHeadingFs;
+      }
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin-top: 3.5rem;
+    }
+  }
+
   footer {
     padding: 4rem 0;
 
@@ -1008,6 +1082,30 @@ footer {
           font-size: $mbSubHeadingFs;
         }
       }
+    }
+  }
+
+  .terms {
+    padding: 5rem 0;
+    width: 95%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: $mbHeadingFs;
+      margin-top: 3rem;
+    }
+
+    p {
+      font-size: $mbSubHeadingFs;
+
+      a {
+        font-size: $mbSubHeadingFs;
+      }
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin-top: 3.5rem;
     }
   }
 

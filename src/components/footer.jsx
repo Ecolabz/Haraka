@@ -19,6 +19,7 @@ function BaseInfo() {
             <h5>Explore</h5>
             <FaqLink />
             <Link to="/about">About Us</Link>
+            <Link to="/terms">Terms & Conditions</Link>
           </div>
           <div className="footer-container">
             <h5>Follow Us</h5>
@@ -29,7 +30,7 @@ function BaseInfo() {
             >
               {" "}
               <img src={instagram} alt="Instagram" />
-              Instagram
+              haraka_shop
             </a>
 
             <a
@@ -39,7 +40,7 @@ function BaseInfo() {
             >
               {" "}
               <img src={twitter} alt="Twitter" />
-              Twitter
+              harakashop
             </a>
           </div>
         </div>
