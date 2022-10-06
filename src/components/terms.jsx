@@ -89,11 +89,13 @@ const TermsPage = () => {
             forward it to the relevant Provider and / or Delivery Provider. By
             placing an order through the Haraka platform or app, you enter into
             an agreement with the Partner and the Delivery Partner for the
-            purchase of Goods, Services and Delivery services. Both the
-            transaction for Goods or Services via the Haraka website and any
-            related delivery charge, are transactions with the Partner or seller
-            of the Goods and Services, the third Party Delivery Partner, and
-            You.
+            purchase of Goods, Services and Delivery services.
+          </p>
+          <p>
+            Both the transaction for Goods or Services via the Haraka website
+            and any related delivery charge, are transactions with the Partner
+            or seller of the Goods and Services, the third Party Delivery
+            Partner, and You.
           </p>
           <p>
             3.2 Haraka’s role is to act as an agent for both the seller of the
@@ -296,12 +298,12 @@ const TermsPage = () => {
             order, aim
           </p>
           <p>
-            5.9.1. to deliver the product to you at the place of delivery
+            5.9.1. To deliver the product to you at the place of delivery
             requested by you in your order;
           </p>
-          <p>5.9.2. to deliver within the time confirmed by the restaurant;</p>
+          <p>5.9.2. To deliver within the time confirmed by the restaurant;</p>
           <p>
-            5.9.3. to inform you if they expect that they are unable to meet the
+            5.9.3. To inform you if they expect that they are unable to meet the
             estimated delivery time.
           </p>
           <p>
